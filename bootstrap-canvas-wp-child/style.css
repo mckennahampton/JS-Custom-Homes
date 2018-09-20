@@ -1,0 +1,1299 @@
+/*
+Theme Name: Bootstrap Canvas WP Child
+Theme URI: 
+Author: Schon Garcia
+Author URI: 
+Description: The 2015 theme for WordPress built on Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
+Version: 1.92
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, white, light, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, editor-style, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: bootstrapcanvaswp
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import 'css/fonts.css';
+
+.visible-xxs {
+    display: block;
+    }
+
+    .hidden-xxs {
+        display: none;
+        }
+
+.policy-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.col-inline {
+    display: inline-block;
+    vertical-align: middle;
+    float: none!important;
+}
+
+.centered-title {
+    width: 100%;
+    text-align: center;
+    margin: 60px 0px;
+}
+    
+
+.top-sticky-contact-nav {
+    background: #000;
+    border-top: 2px solid #eb2d14;
+    border-bottom: 2px solid #eb2d14;
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    display: block;
+    overflow: auto;
+    bottom: 0px;
+}
+
+.padded {
+    padding: 15px 15px;
+}
+
+.homes-mobile {
+    margin-bottom: 20px;
+}
+
+.our-process {
+padding: 15px 0px;
+}
+
+.our-process-panel {
+    position: relative;
+}
+
+.our-process-panel > div {
+    vertical-align: middle;
+}
+
+.our-process-panel > div > div {
+    display: inline-block;
+    float: none;
+}
+
+.our-process .our-process-panel:nth-child(odd) > div {
+    text-align: left;
+}
+
+.our-process .our-process-panel:nth-child(even) > div {
+   text-align: right;
+}
+
+.top-sticky-contact-nav > div {
+    width: auto;
+
+    display: inline-block;
+    float: none;
+    position: relative;
+    margin: 15px 0px;
+}
+
+.top-sticky-contact-nav > div > span {
+    padding: 0px 5px;
+    color: #fff;
+}
+
+.top-sticky-contact-nav span:first-child {
+border-right: 1px solid white;
+}
+
+.top-sticky-contact-nav a {
+    transition: all 0.5s ease;
+    padding: 3px 8px;
+    color: #fff;
+    font-family: RalewayMedium;
+    border: 1px solid #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 0px 8px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#299a0b+0,20bf0f+100 */
+background: rgb(41,154,11); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(41,154,11,1) 0%, rgba(32,191,15,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(41,154,11,1) 0%,rgba(32,191,15,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(41,154,11,1) 0%,rgba(32,191,15,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#20bf0f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.top-sticky-contact-nav a:hover {
+    color: #fff;
+}
+
+.sticky {
+    background: rgba(0,0,0,0.8);
+    border-bottom: 2px solid black;
+}
+ 
+
+/*Custom CSS Styles */
+
+  /* Underline From Left */
+  #menu-main-menu li {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+  #menu-main-menu li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #eb2d14;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #menu-main-menu li:hover:before, #menu-main-menu li:focus:before, #menu-main-menu li:active:before {
+    right: 0;
+  }
+
+#map {
+margin: 25px 0;
+}
+
+.main-page-block p {
+font-size: 23px;
+padding: 0px 30px;
+}
+
+html,body {
+
+font-family:Oxygen!important;
+}
+
+.hr {
+display: block;
+width: 95%;
+height: 2px;
+margin: 15px auto;
+background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,1)), color-stop(90%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.blog-header {
+padding: 0px!important
+}
+
+.single-home-post {
+width: 100%;
+height: 300px;
+overflow: hidden;
+}
+.single-home-post img {
+margin-top: -15%;
+}
+
+.gallery {
+display: none;
+}
+
+#map {
+height: 500px;
+}
+
+#map .map-pic {
+width: 95%;
+margin: 0 auto;
+max-width: 150px;
+padding: 5px;
+}
+
+
+.blog-post h1,.blog-post  h2,.blog-post  h3,.blog-post  h4,.blog-post  h5,.blog-post  h6,.blog-post  .h1,.blog-post  .h2,.blog-post  .h3,.blog-post  .h4.blog-post , .h5,.blog-post  .h6 {
+font-family:Oxygen-Bold!important;
+}
+
+.blog-post-meta {
+display: none;
+}
+
+.blog-post-title{ margin-bottom: 15px!important;}
+
+.navbar-nav > li > a {
+font-family:Oxygen;
+font-size: 18px;
+color: #fff!important;
+padding: 10px!important;
+}
+
+.navbar-inverse {
+background-color:#000!important;
+}
+
+
+.navbar-nav {
+float: right!important;
+}
+
+.navbar .container-h {
+display: table!important;
+}
+
+.navbar .nav-row {
+display: table-row;
+width: 100%!important;
+}
+
+#bs-example-navbar-collapse-1 {
+vertical-align: middle;
+text-align: center;
+}
+
+.nav-logo {
+display:block;
+vertical-align: top;
+text-align: top;
+max-width: 500px;
+}
+
+.award{
+font-size: 15px;
+font-family:RalewayRegular;
+display: block;
+margin: 25px auto;
+}
+
+.award a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    background: #eb2d14;
+    border: 2px solid white;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.award a:hover {
+    background: #fff;
+    color: #eb2d14;
+    border: 2px solid #eb2d14;
+    text-decoration: none;
+}
+
+.house-row ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.house-row li {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-logo img {
+width: 95%;
+height: auto;
+margin: 10px auto;
+}
+
+.entry {
+text-align: justify;
+}
+
+.blog-footer {
+background: #000;
+border-top: 1px solid black;
+padding: 40px 20px 10px 20px!important;
+color: #fff!important;
+text-align: left!important;
+width: 100%;
+}
+
+.footer-contact-con {
+color: #fff;
+font-family:Oxygen-Bold;
+font-size: 15px;
+text-align: center;
+}
+
+.footer-contact-con h2 {
+color: #fff!important;
+font-family:Oxygen!important;
+font-size: 25px;
+}
+
+.mh-footer {
+width: 95%;
+max-width: 225px;
+padding: 10px 20px 0px 5px;
+margin-bottom: 0px!important;
+display: inline-block;
+}
+
+
+.sh-form-con h3 {
+font-family:Oxygen;
+}
+
+
+
+.dropdown-menu > li > a {
+text-transform: uppercase;
+font-family:Oxygen;
+color: #000!important;
+}
+
+.blog-footer h2 {
+margin-top: 0px!important;
+}
+
+.footer-contact-guts {
+display: inline-block;
+overflow: hidden;
+vertical-align: middle;
+}
+
+.footer-primary-nav ul {
+list-style-type: none;
+padding: 0!important;
+margin: 0!important;
+}
+
+.house-specs-ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    -o-column-count: 1;
+    column-gap: 20px;
+    -moz-column-gap: 20px;
+    -webkit-column-gap: 20px;
+    -o-column-gap: 20px;
+    column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    -webkit-column-rule-style: solid;
+    -o-column-rule-style: solid;
+    column-rule-width: 3px;
+    -moz-column-rule-width: 3px;
+    -webkit-column-rule-width: 3px;
+    -o-column-rule-width: 3px;
+    column-rule-color: #000;
+    -moz-column-rule-color: #000;
+    -webkit-column-rule-color: #000;
+    -o-column-rule-color: #000;
+    column-width:;
+    -moz-column-width:;
+    -webkit-column-width:;
+    -o-column-width:;
+}
+
+.house-specs-ul li {
+list-style: none;
+}
+
+.house-specs {
+    text-align: center;
+}
+
+.footer-primary-nav li:not(:last-child):after{
+content: "-";
+}
+
+.footer-primary-nav li:not(:first-child) a {
+padding: 0 10px;
+}
+
+.footer-primary-nav li:first-child a {
+padding-right: 10px;
+}
+
+.footer-primary-nav li a {
+color: #fff!important;
+}
+
+#post-310 {
+color: #000;
+}
+
+.testimonial {
+text-align: center;
+padding: 1%;
+width: 100%;
+max-width: 700px;
+float: left;
+}
+
+.testimonial #image, .testimonial #p {
+display: inline-block;
+vertical-align: middle;
+}
+
+#p {
+font-size: 15px;
+text-align: left;
+}
+
+.t-hr {
+width: 95%;
+height: 1px;
+border-top: 1px solid black;
+margin: 25px auto;
+}
+
+.testimonial-con {
+margin: 20px 5px;
+}
+
+.testimonial-con h4 {
+color: #73100A!important;
+padding-top: 10px;
+}
+
+.btn-group, .btn-group-vertical {
+    display: table-cell!important;
+}
+
+.hr-lite {
+    display: block;
+    height: 0px;
+    border-top: 1px solid #ccc;
+    margin: 15px auto;
+    width: 100%;
+}
+
+.bottom-spacer {
+    display: block;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.blog-main, .blog-main-left {
+font-size: 18px!important;
+padding: 0px 25px;
+}
+
+.single-home {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.t-hr-s {
+max-width: 500px;
+width: 75%;
+height: 1px;
+background: #000;
+margin: 15px auto;
+}
+
+.container-h {
+width: 95%;
+margin: 0 auto;
+}
+
+.footer-fb-con {
+margin-top: 15px;
+}
+
+.navbar .container-h {
+    text-align: left;
+    }
+    
+    .navbar-header-con {
+    display: table-cell;
+    margin-left: 20px;
+    vertical-align: middle;
+    width: 40px;
+    right: 0px;
+    top: 28px;
+    }
+
+    .navbar-toggle {
+        margin-right: 0px!important;
+    }
+
+    .table-cell-spacer {
+        display: table-cell;
+        width: auto;
+    }
+
+    #bs-example-navbar-collapse-1 {
+        background-color: black;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        border: 2px solid #eb2d14;
+        }
+
+    .featured-slideshow-link {
+        text-decoration: none;
+       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+1,1+50,0+100 */
+        background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+        color: #000;
+        font-family: RalewayRegular;
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        line-height: 2em;
+        width: 100%;
+    }
+
+    .featured-slideshow-link:hover {
+        text-decoration: none;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eb2d14+0,eb2d14+100&0+1,1+50,0+100 */
+        background: -moz-linear-gradient(left, rgba(235,45,20,0) 0%, rgba(235,45,20,0) 1%, rgba(235,45,20,1) 50%, rgba(235,45,20,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(235,45,20,0) 0%,rgba(235,45,20,0) 1%,rgba(235,45,20,1) 50%,rgba(235,45,20,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(235,45,20,0) 0%,rgba(235,45,20,0) 1%,rgba(235,45,20,1) 50%,rgba(235,45,20,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eb2d14', endColorstr='#00eb2d14',GradientType=1 ); /* IE6-9 */
+        color: #fff;
+    }
+
+
+
+
+/*Our Process page*/
+
+.blur {-webkit-filter: blur(4px); filter: blur(4px); }
+
+
+
+
+/*END Our Process page*//*Custom nabar scroll css*/.logo-area-con-on-scroll {	position: absolute;}
+
+
+
+/* END Custom CSS Styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 539px) and (max-width: 767px) {
+
+
+    .hidden-xxs {
+    display: none;
+    }
+    
+    .container {
+    width: 100%;
+    }
+    
+    .navbar-header {
+    }
+    
+    .nav-middle {
+    display: none;
+    }
+    
+    .nav-logo {
+    width: 95%;
+    max-width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    }
+    
+    
+    .award {
+    font-size: 20px;
+    }
+    
+    .navbar .container-h {
+    width: 90%!important;
+    }
+    
+    #content {
+    text-align: justify!important;
+    }
+    
+    .blog-footer .logo-area-con {
+    text-align: center;
+    }
+    
+    .blog-footer .s1 {
+    font-size: 25px;
+    }
+
+    .house-specs-ul {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    -o-column-count: 1;
+    column-gap: 40px;
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
+    -o-column-gap: 40px;
+    column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    -webkit-column-rule-style: solid;
+    -o-column-rule-style: solid;
+    column-rule-width: 3px;
+    -moz-column-rule-width: 3px;
+    -webkit-column-rule-width: 3px;
+    -o-column-rule-width: 3px;
+    column-rule-color: #000;
+    -moz-column-rule-color: #000;
+    -webkit-column-rule-color: #000;
+    -o-column-rule-color: #000;
+    column-width:;
+    -moz-column-width:;
+    -webkit-column-width:;
+    -o-column-width:;
+    }
+
+    .house-specs {
+        text-align: center;
+    }
+    
+    .blog-footer .s2 {
+    font-size: 15px;
+    }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff!important;
+    }
+    
+    .footer-middle {
+    display: none;
+    }
+    
+    .blog-footer .logo-area-con {
+    margin-bottom: 10px;
+    }
+    
+    .footer-contact-con {
+    display: block;
+    max-width: 264px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+    .footer-contact-guts {
+    text-align: center;
+    }
+    
+    .dropdown-menu > li > a {
+    text-transform: uppercase;
+    font-family: Cond Light;
+    color: #fff!important;
+    }
+    
+    .footer-primary-nav {
+    line-height: 30px;
+    text-align: center;
+    }
+    
+    .footer-primary-nav li {
+    display: inline-block;
+    vertical-align: center;
+    }
+    
+    .mh-footer {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0px 0px 0px;
+    }
+    
+    .testimonial #image {
+    width: 100%;
+    }
+    
+    .testimonial #p {
+    width: 100%;
+    }
+    
+    .testimonial img {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px;
+    }
+    
+    .page-id-346 .images {
+    display: inline-block;
+    max-width: 750px;
+    width: 100%;
+    vertical-align: middle;
+    }
+    
+    .page-id-346 .text {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+    width: 100%;
+    }
+    
+    }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .top-sticky-contact-nav > div > span:first-child {
+        padding: 0px 18px;
+    }
+
+    .top-sticky-contact-nav > div > span:last-child {
+        padding: 0px 15px;
+    }
+
+.logo-area-con {
+    display: inline-block;
+}
+
+.hidden-xxs {
+    display: block;
+}
+
+.house-specs-ul {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    -o-column-count: 3;
+    column-gap: 40px;
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
+    -o-column-gap: 40px;
+    column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    -webkit-column-rule-style: solid;
+    -o-column-rule-style: solid;
+    column-rule-width: 3px;
+    -moz-column-rule-width: 3px;
+    -webkit-column-rule-width: 3px;
+    -o-column-rule-width: 3px;
+    column-rule-color: #000;
+    -moz-column-rule-color: #000;
+    -webkit-column-rule-color: #000;
+    -o-column-rule-color: #000;
+    column-width:;
+    -moz-column-width:;
+    -webkit-column-width:;
+    -o-column-width:;
+    }
+
+.award {
+    font-size: 20px;
+    }
+
+.table-cell-spacer {
+    display: none;
+}
+
+.header-menu {
+    display: table-cell!important;
+    width: 250px;
+    }
+
+#bs-example-navbar-collapse-1 {
+    position: relative;
+    border: none;
+    top: 0px;
+    right: 0px;
+    }
+
+.visible-xxs {
+display: none;
+}
+
+.navbar .container-h {
+width: 95%!important;
+}
+
+.footer-middle {
+display: table-cell;
+}
+
+.footer-contact-con {
+width: 285px;
+}
+
+.footer-table {
+display: table;
+width: 10)%;;
+}
+
+.footer-contact-con {
+display: table-cell;
+width: 350px;
+}
+
+.footer-primary-nav {
+line-height: 30px;
+text-align: left;
+}
+
+.footer-primary-nav li {
+display: inline-block;
+vertical-align: center;
+}
+
+#post-310 {
+width: 70%;
+margin: auto;
+}
+
+.testimonial img {
+max-width: 1000px;
+width: 100%;
+height: auto;
+padding: 10px;
+}
+
+.testimonial #image {
+width: 100%;
+}
+
+.testimonial #p {
+width: 100%;
+}
+
+#bs-example-navbar-collapse-1 ul
+{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	-webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+	-webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+	-webkit-column-rule-width: 3px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 3px; /* Firefox */
+    column-rule-width: 3px;
+    -webkit-column-rule-color:  #fff; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: #fff; /* Firefox */
+    column-rule-color: #fff;
+}
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 993px) and (max-width: 1199px) {
+
+    .top-sticky-contact-nav > div > span:first-child {
+        padding: 0px 18px;
+    }
+
+    .top-sticky-contact-nav > div > span:last-child {
+        padding: 0px 15px;
+    }
+
+    .logo-area-con {
+        display: inline-block;
+    }
+
+    .house-specs-ul {
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        -o-column-count: 2;
+        column-gap: 40px;
+        -moz-column-gap: 40px;
+        -webkit-column-gap: 40px;
+        -o-column-gap: 40px;
+        column-rule-style: solid;
+        -moz-column-rule-style: solid;
+        -webkit-column-rule-style: solid;
+        -o-column-rule-style: solid;
+        column-rule-width: 3px;
+        -moz-column-rule-width: 3px;
+        -webkit-column-rule-width: 3px;
+        -o-column-rule-width: 3px;
+        column-rule-color: #000;
+        -moz-column-rule-color: #000;
+        -webkit-column-rule-color: #000;
+        -o-column-rule-color: #000;
+        column-width:;
+        -moz-column-width:;
+        -webkit-column-width:;
+        -o-column-width:;
+        }
+
+    .award {
+        font-size: 25px;
+        }
+
+    .hidden-xxs {
+        display: block;
+    }
+
+    .table-cell-spacer {
+        display: none;
+    }
+    
+    .header-menu {
+        display: table-cell!important;
+        }
+    
+    #bs-example-navbar-collapse-1 {
+        position: relative;
+        border: none;
+        top: 0px;
+        right: 0px;
+        }
+
+.visible-xxs {
+display: none;
+}
+
+.navbar .container-h {
+width: 98%!important;
+}
+
+.footer-middle {
+display: table-cell;
+}
+
+.footer-table {
+display: table;
+width: 100%;
+}
+
+.footer-contact-con {
+display: table-cell;
+}
+
+.footer-primary-nav {
+line-height: 30px;
+text-align: left;
+}
+
+.footer-primary-nav li {
+display: inline-block;
+vertical-align: center;
+}
+
+#post-310 {
+width: 70%;
+margin: auto;
+}
+
+.testimonial img {
+max-width: 1000px;
+width: 90%;
+height: auto;
+padding: 10px;
+}
+
+.testimonial #image {
+width: 100%;
+}
+
+.testimonial #p {
+width: 100%;
+}
+
+
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .top-sticky-contact-nav > div > span:first-child {
+        padding: 0px 18px;
+    }
+
+    .top-sticky-contact-nav > div > span:last-child {
+        padding: 0px 15px;
+    }
+
+    .logo-area-con {
+        display: inline-block;
+    }
+
+    .table-cell-spacer {
+        display: none;
+    }
+
+    .hidden-xxs {
+        display: block;
+    }
+
+    .header-menu {
+        display: table-cell!important;
+        }
+    
+    #bs-example-navbar-collapse-1 {
+        position: relative;
+        border: none;
+        top: 0px;
+        right: 0px;
+        }
+
+.visible-xxs {
+display: none;
+}
+
+.house-specs-ul {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    -o-column-count: 3;
+    column-gap: 40px;
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
+    -o-column-gap: 40px;
+    column-rule-style: solid;
+    -moz-column-rule-style: solid;
+    -webkit-column-rule-style: solid;
+    -o-column-rule-style: solid;
+    column-rule-width: 3px;
+    -moz-column-rule-width: 3px;
+    -webkit-column-rule-width: 3px;
+    -o-column-rule-width: 3px;
+    column-rule-color: #000;
+    -moz-column-rule-color: #000;
+    -webkit-column-rule-color: #000;
+    -o-column-rule-color: #000;
+    column-width:;
+    -moz-column-width:;
+    -webkit-column-width:;
+    -o-column-width:;
+    }
+
+.award {
+    font-size: 25px;
+    }
+
+.sh-form-con {
+width: 75%;
+margin: 0 auto;
+}
+
+.footer-contact-guts {
+text-align: left;
+}
+
+.footer-middle {
+display: table-cell;
+}
+
+.footer-table {
+display: table;
+width: 100%;
+}
+
+.footer-contact-con {
+display: table-cell;
+width: 350px;
+}
+
+.blog-footer .s1 {
+font-size: 25px;
+}
+
+.footer-primary-nav {
+line-height: 30px;
+text-align: left;
+}
+
+.footer-primary-nav li {
+display: inline-block;
+vertical-align: center;
+}
+
+#post-310 {
+width: 70%;
+margin: auto;
+}
+
+.testimonial img {
+max-width: 1000px;
+width: 90%;
+height: auto;
+padding: 10px;
+}
+.testimonial #image {
+width: 100%;
+}
+
+.testimonial #p {
+width: 100%;
+}
+
+
+#bs-example-navbar-collapse-1 {
+width: auto!important;
+}
+
+
+}
+
+/*END Media Queries */
+
+
+
+
+
+
+
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px auto 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text,
+.gallery-caption {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.gallery-item img {
+    border-width: 1px;
+    margin-bottom: 0;
+}
+
+.wp-post-image {
+	margin-bottom: 20px;
+}
+
+.sticky {
+}
+
+.bypostauthor {
+}
+
+.entry {
+	margin-bottom: 20px;
+}
+
+.widget {
+	text-align: initial;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+#searchsubmit {
+	margin: 4px 0;
+}
+
+.comment-list {
+	padding: 0;
+}
+
+.comment-list, 
+.children:nth-child(n+1) {
+	list-style: none;
+}
+
+@media (max-width: 767px) {
+	.comment-list, 
+	.children:nth-child(n+1) {
+		padding: 0;
+  	} 
+}.video-container iframe {    position: absolute;    top:0;    left: 0;    width: 100%;    height: 100%;}.video-container {    position: relative;    padding-bottom: 56.25%;    padding-top: 35px;    height: 0;    overflow: hidden;}

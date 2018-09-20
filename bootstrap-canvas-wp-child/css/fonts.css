@@ -1,0 +1,135 @@
+@font-face {
+    font-family:Oxygen;
+    src: url('fonts/oxygen/Oxygen.eot');
+   }
+   
+   @font-face {
+    font-family:Oxygen;
+    src: url('fonts/oxygen/Oxygen.otf');
+   }
+   
+   @font-face {
+    font-family:Oxygen-Bold;
+    src: url('fonts/oxygen/Oxygen-Bold.eot');
+   }
+   
+   @font-face {
+    font-family:Oxygen-Bold;
+    src: url('fonts/oxygen/Oxygen-Bold.otf');
+   }
+   
+   
+   @font-face {
+    font-family:Oxygen-Bold-Italic;
+    src: url('fonts/oxygen/Oxygen-BoldItalic.eot');
+   }
+   
+   @font-face {
+    font-family:Oxygen-Bold-Italic;
+    src: url('fonts/oxygen/Oxygen-BoldItalic.otf');
+   }
+   
+   @font-face {
+    font-family:Oxygen-Italic;
+    src: url('fonts/oxygen/Oxygen-Italic.eot');
+   }
+   
+   @font-face {
+    font-family:Oxygen-Italic;
+    src: url('fonts/oxygen/Oxygen-Italic.otf');
+   }
+   
+   @font-face {
+   font-family:TrojanPro;
+   src: url('fonts/TrajanPro-Regular.eot');
+   }
+   
+   @font-face {
+   font-family:RalewayBold;
+   src: url('fonts/Raleway-Bold.ttf');
+   }
+
+   @font-face {
+    font-family:RalewayBold;
+    src: url('fonts/Raleway-Bold.eot');
+    }
+
+@font-face {
+    font-family:RalewayExtraBold;
+    src: url('fonts/Raleway-ExtraBold.ttf');
+    }
+
+@font-face {
+    font-family:RalewayExtraBold;
+    src: url('fonts/Raleway-ExtraBold.eot');
+}
+
+@font-face {
+    font-family:RalewayExtraLight;
+    src: url('fonts/Raleway-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family:RalewayExtraLight;
+    src: url('fonts/Raleway-ExtraLight.eot');
+}
+
+@font-face {
+    font-family:RalewayHeavy;
+    src: url('fonts/Raleway-Heavy.ttf');
+}
+
+@font-face {
+    font-family:RalewayHeavy;
+    src: url('fonts/Raleway-Heavy.eot');
+}
+
+@font-face {
+    font-family:RalewayLight;
+    src: url('fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+    font-family:RalewayLight;
+    src: url('fonts/Raleway-Light.eot');
+}
+
+@font-face {
+    font-family:RalewayMedium;
+    src: url('fonts/Raleway-Medium.eot');
+}
+
+@font-face {
+    font-family:RalewayMedium;
+    src: url('fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family:RalewayRegular;
+    src: url('fonts/Raleway-Regular.eot');
+}
+
+@font-face {
+    font-family:RalewayRegular;
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family:RalewaySemiBold;
+    src: url('fonts/Raleway-SemiBold.eot');
+}
+
+@font-face {
+    font-family:RalewaySemiBold;
+    src: url('fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family:RalewayThin;
+    src: url('fonts/Raleway-Thin.eot');
+}
+
+@font-face {
+    font-family:RalewayThin;
+    src: url('fonts/Raleway-Thin.ttf');
+}
